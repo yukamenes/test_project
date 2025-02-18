@@ -1,7 +1,6 @@
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
+from models.classifier_interface import MnistClassifierInterface
 
-from task1_image_classification.models.classifier_interface import *
 
 class MnistRandomForest(MnistClassifierInterface):
     """
