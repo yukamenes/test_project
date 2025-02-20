@@ -1,5 +1,6 @@
 from models.classifier_interface import MnistClassifierInterface
 from models.random_forest import MnistRandomForest
+from models.neural_network import MnistNeuralNetwork
 
 class MnistClassifier:
     """
@@ -19,7 +20,7 @@ class MnistClassifier:
         if algorithm == "rf":
             self.model = MnistRandomForest()
         elif algorithm == "nn":
-            raise NotImplementedError("Neural Network model is not implemented yet.")
+            self.model = MnistNeuralNetwork()
         elif algorithm == "cnn":
             raise NotImplementedError("CNN model is not implemented yet.")
         else:

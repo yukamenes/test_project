@@ -9,7 +9,7 @@ from mnist_classifier import MnistClassifier
 x_train, x_test = x_train / 255.0, x_test / 255.0
 
 # Create a classifier (Random Forest in this case)
-classifier = MnistClassifier("rf")
+classifier = MnistClassifier("nn")
 
 # Train the model on the training dataset
 classifier.train(x_train, y_train)
